@@ -1,0 +1,101 @@
+<div id="video">
+    <div class="banner">
+        <img src="../images/media-header-BN.jpg" alt="Banner Image">
+        <div class="banner-content ">
+            <h1 class="mb-0 pt-2 heading-large text-overline text-redline-left">Video</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-transparent mb-0">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Media</a></li>
+                    <li class="breadcrumb-item active"><a href="#">Video</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="black-container three-line">
+        <div class="container">
+            <div class="row">
+                <div class="myVideo col-lg-6 position-relative">
+                    <button class="pic-modal start" data-bs-toggle="modal" data-type="mainVideo"
+                        data-bs-target="#picModal" data-play="_01"></button>
+                    <img src="../images/video1.jpg" alt="" />
+                </div>
+                <div class="col-lg-6">
+                    <div class="video-title">
+                        <h1 class="heading-medium color-white">PRODUCING HSS REAMER</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="myVideo col-lg-6 position-relative">
+                    <button class="pic-modal start" data-bs-toggle="modal" data-type="mainVideo"
+                        data-bs-target="#picModal" data-play="_02"></button>
+                    <img src="../images/video2.jpg" alt="" />
+                </div>
+                <div class="col-lg-6">
+                    <div class="video-title">
+                        <h1 class="heading-medium color-white">CARBIDE REAMER DIAMETER ROUNDNESS TEST</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- popup -->
+    <div class="modal fade" id="picModal" tabindex="-1" aria-labelledby="picModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </div>
+    <!-- popup -->
+</div>
+<script>    // Modal
+    // 關閉modal時
+    $('#picModal').on('hide.bs.modal', function (e) {
+        // 清空modal-body裡的圖片
+        $('#picModal .modal-body').html('');
+        // 背景影片播放
+        $("video").each(function () {
+            $(this).get(0).play();
+        });
+    });
+    //點擊開啟彈窗
+    $('.pic-modal').on('click', function () {
+        var $theModal = $(this).data('target'),
+            $target = $(this).data('type'),
+            $playUrl = $(this).data('play'),
+            dataUrl;
+
+        // 如果 data-type="mainPic"
+        if ($target === 'mainPic') {
+            // modal-body裡新增圖片
+            $('#picModal .modal-body').html('<img src=' + $dataSrc + '>');
+        }
+        // 如果 data-type="mainVideo"
+        if ($target === 'mainVideo') {
+
+            // 背景影片暫停
+            $("video").each(function () {
+                $(this).get(0).pause();
+            });
+
+            switch ($playUrl) {
+                // 當data-play=_01時
+                case "_01":
+                    dataUrl = "onmUOqDFDyI";
+                    break;
+                case "_02":
+                    dataUrl = "WPosXxWREzE";
+                    break;
+            }
+
+            // 彈窗螢幕寬高
+            width = 100;
+            height = 600;
+
+            $('#picModal .modal-body').html('<iframe width="' + width + '%" height="' + height + '" src="https://www.youtube.com/embed/' + dataUrl + '?autoplay=1" name="youtube embed" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+        }
+    });</script>

@@ -1,0 +1,130 @@
+<div id="products3" class="gray-container">
+    <div class="banner">
+        <img src="../images/products-header-BN.jpg" alt="Banner Image">
+        <div class="banner-content ">
+            <h1 class="mb-0 pt-2 heading-large text-overline text-redline-left">Adjustable Reamers</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-transparent mb-0">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Products</a></li>
+                    <li class="breadcrumb-item active"><a href="#">Adjustable Reamers</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="black-container overflow-hidden">
+        <div class="three-line"></div>
+        <div class="container text-center">
+            <div class='swiper-top align-items-center'>
+                <div id="galleryTop" class="swiper col-lg-7 col-12">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h5 class="swiper-tool-name">CR 6.0mm(m5)</h5>
+                            <img src="../images/products-solidcarbide-tool1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <h5 class="swiper-tool-name">CSR 6.0mm(m5)</h5>
+                            <img src="../images/products-solidcarbide-tool2.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="galleryThumbs" class="swiper col-lg-5 col-12">
+                    <h2 class="heading-medium color-white text-underline text-whiteline-right text-center pb-2">
+                        Solid
+                        Carbide Short Reamers
+                    </h2>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="picture">
+                                <img src="../images/products-solidcarbide-tool1.png">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="picture">
+                                <img src="../images/products-solidcarbide-tool2.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-1"></div>
+                </div>
+            </div>
+            <div class="btn-product gap-2 d-block col-12 col-lg-7">
+                <a href="../catalog/products.pdf"
+                    class="btn btn-products bg-pr-dark btn-download d-inline-flex align-items-center color-white"
+                    download="products.pdf"><i class="icon-pdf icon-color-light"></i>Catalog Download</a>
+
+                <a class="btn btn-products bg-pr-dark btn-add d-inline-flex align-items-center color-white" href=" #"
+                    onclick="addicart('134');"><i class="icon-cart icon-color-light"></i>Add
+                    to Inquiry</a>
+            </div>
+            <div class="col-8 text-start">
+                <h2 class="heading-medium color-white text-underline text-redline-right pb-2">Features
+                </h2>
+                <p class="paragraph-primary ">
+                <ol class="color-gray ps-3">
+                    <li>Most generally recommended reamer among other carbide reamers.</li>
+                    <li>Product durability is enhanced by 5 to 10 times greater than that of conventional HSS
+                        Reamers
+                        with
+                        lasting precision.</li>
+                    <li>Precise reaming achieved than that of conventional HSS Reamers as well as allowing faster
+                        speeds
+                        and
+                        feeds.</li>
+                    <li>All around type corresponding to the work that is wide from cast iron to steel.</li>
+                </ol>
+                </p>
+            </div>
+        </div>
+        <img class="products3-bg-img1" src="../images/products3-bg1.png" alt="">
+    </div>
+    <div class="spec-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-12 text-start">
+                    <h2 class="heading-medium color-black text-underline text-redline-right pb-2">Specifications
+                    </h2>
+                    <img class="spec-img" src="../images/products-solidcarbide-spec.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="products3-bg-img2" src="../images/products3-bg2.png" alt="">
+</div>
+<script>
+    $(document).ready(function () {
+
+        var galleryThumbs = new Swiper("#galleryThumbs", {
+            slidesPerView: 3,
+            spaceBetween: 8,
+            centeredSlides: true,
+            centeredSlidesBounds: true
+        });
+        var galleryTop = new Swiper("#galleryTop", {
+            navigation: {
+                nextEl: ".swiper-button-next-1",
+                prevEl: ".swiper-button-prev-1",
+            },
+            thumbs: {
+                swiper: galleryThumbs,
+            },
+            pagination: {
+                el: ".swiper-pagination-1",
+                clickable: true,
+            },
+        });
+        if (galleryThumbs.slides.length > galleryThumbs.params.slidesPerView) {
+            galleryTop.on('slideChangeTransitionStart', function () {
+                galleryThumbs.slideTo(galleryTop.activeIndex);
+            });
+        }
+        else {
+            galleryThumbs.$wrapperEl.addClass('justify-content-center');
+            galleryThumbs.params.centeredSlides = false;
+            galleryThumbs.params.centeredSlidesBounds = false;
+            galleryThumbs.params.initialSlide = 0;
+        }
+    });
+</script>

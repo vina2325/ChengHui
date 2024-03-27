@@ -1,0 +1,260 @@
+
+#contact .black-container {
+    padding-top: 4rem;
+    margin-bottom: -0.4%;
+}
+.contact-container {
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+#contact hr {
+    color: antiquewhite;
+    margin: 3rem 0 1rem 0;
+}
+
+  
+.contact-container label {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+}
+  /* 更改输入框的颜色 */
+  .contact-container input, .contact-container select, .contact-container textarea {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffffff3b;
+    border-radius: 5px;
+    color: white;
+}
+
+  .contact-container button {
+    position: relative;
+    background-color: #e60012;
+    color: #ffffffe0;
+    padding: 1.5rem 3.5rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    margin: 3rem auto;
+}
+.contact-container i {
+    position: absolute;
+    right: 9px;
+    font-size: 1.5rem;
+}
+.product-card-group {
+    padding-bottom: 6rem;
+}
+
+#inquiry .gray-container {
+    padding: 4rem 0 0 0;
+}
+#inquiry .product-card {
+    border-radius: 5px;
+    padding: 2rem 5rem;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+#inquiry .product-card img {
+    margin-right: 1rem;
+}
+
+#inquiry .product-card .product-details h2 {
+    color: #ff0017;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+#inquiry .quantity {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    margin-right: 1rem;
+}
+
+#inquiry hr{
+    color: #ff0015;
+    height: 1px;
+    margin: 3rem 0 1rem 0;
+    opacity: 1;
+}
+
+
+
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #fff;
+    border: unset;
+}
+
+  .product-details {
+    flex: 1;
+  }
+  .product-details h2, .product-details p {
+    margin: 0;
+  }
+
+  .quantity input {
+    width: 40px;
+    text-align: center;
+    margin: 0 10px;
+    color: #e60012;
+    font-weight: 600;
+  }
+  #inquiry .minus-btn{
+      background: url(../images/inquiry-add.png);
+      width: 2rem;
+      height: 2rem;
+    }
+    #inquiry .plus-btn{
+        background: url(../images/inquiry-sub.png);
+        width: 2rem;
+        height: 2rem;
+      }
+      #inquiry .delete-btn {
+          background: url(../images/inquiry-close.png);
+          width:40px;
+          height:40px;
+    }
+    #inquiry .btn{
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  .red-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: red;
+  }
+  .red-line.top {
+    top: 0;
+  }
+  .red-line.bottom {
+    bottom: 0;
+  }
+  .required::after {
+    content: "*";
+    color: red;
+    vertical-align: sub;
+}
+
+.inquiry-container {
+    padding: 20px 0 0 0;
+    border-radius: 10px;
+}
+.inquiry-container label {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+}
+  /* 更改输入框的颜色 */
+  .inquiry-container input, .inquiry-container select, .inquiry-container textarea {
+    background-color: rgb(216 216 216);
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.inquiry-container button {
+    position: absolute;
+    background-color: #e60012;
+    color: #ffffffe0;
+    padding: 1.5rem 5.5rem;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    left: 50%;
+    top: -2rem;
+    width: 14vw;
+    justify-content: center;
+    transform: translateX(-50%);
+}
+.inquiry-container i {
+    position: absolute;
+    right: 9px;
+    font-size: 1.5rem;
+}
+.btn-dec {
+    margin-top: 8rem;
+    position: relative;
+    left: 50%;
+    top: 0;
+    width: 130%;
+    height: 185px;
+    background: #70080f;
+    z-index: 0;
+    border-radius: 52% 52% 0 0;
+    transform: translateX(-50%) rotate(0deg);
+}
+.inquiry-container button:hover {
+  transform: translateX(calc(-50% + 4px)) !important;
+}
+
+/* Media */
+
+/* xxl */
+@media (max-width: 1399.98px) { 
+
+
+}
+
+/* xl */
+@media (max-width: 1199.98px) { 
+ 
+}
+/* lg */
+@media (max-width:991.98px) { 
+  #inquiry .product-card {
+    padding: 2rem 1rem;
+}
+#inquiry .product-card img {
+  width: 25vw;
+  margin-right: 1rem;
+}
+.btn-dec {
+  width: 145%;
+  height: 77px;
+}
+}
+/* md */
+@media (max-width: 767.98px) { 
+
+  .contact-container label {
+    padding-right: 1rem;
+}
+
+#inquiry .product-card .product-details h2 {
+  font-size: 1.2rem;
+}
+#inquiry .quantity {
+  margin-right: 0rem;
+}
+}
+
+
+/* sm */
+@media (max-width:575.98px) {
+  #inquiry .minus-btn {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+#inquiry .plus-btn {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+#inquiry .quantity .form-control {
+  padding: 0rem;
+}
+}

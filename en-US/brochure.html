@@ -1,0 +1,166 @@
+<body>
+    <div id="brochure">
+        <div class="banner">
+            <img src="../images/media-header-BN.jpg" alt="Banner Image">
+            <div class="banner-content ">
+                <h1 class="mb-0 pt-2 heading-large text-overline text-redline-left">brochure</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent mb-0">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Media</a></li>
+                        <li class="breadcrumb-item active"><a href="#">brochure</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="black-container three-line">
+            <div class="container">
+
+                <div swiper_scale_active class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../images/brochure-pdf.png" />
+                            <p class="pdf-name">2023</p>
+                            <a href="../catalog/products.pdf"
+                                class="btn btn-products bg-pr-dark btn-download d-inline-flex align-items-center color-white"
+                                download="products.pdf"><i class="icon-pdf icon-color-light"></i>Download PDF</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="../images/brochure-pdf.png" />
+                                <p class="pdf-name">2024</p>
+                                <a href="../catalog/products.pdf"
+                                    class="btn btn-products bg-pr-dark btn-download d-inline-flex align-items-center color-white"
+                                    download="products.pdf"><i class="icon-pdf icon-color-light"></i>Download PDF</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/brochure-pdf.png" />
+                            <p class="pdf-name">2025</p>
+                            <a href="../catalog/products.pdf"
+                                class="btn btn-products bg-pr-dark btn-download d-inline-flex align-items-center color-white"
+                                download="products.pdf"><i class="icon-pdf icon-color-light"></i>Download PDF</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/brochure-pdf.png" />
+                            <p class="pdf-name">2026</p>
+                            <a href="../catalog/products.pdf"
+                                class="btn btn-products bg-pr-dark btn-download d-inline-flex align-items-center color-white"
+                                download="products.pdf"><i class="icon-pdf icon-color-light"></i>Download PDF</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/brochure-pdf.png" />
+                            <p class="pdf-name">2027</p>
+                            <a href="../catalog/products.pdf"
+                                class="btn btn-products bg-pr-dark btn-download d-inline-flex align-items-center color-white"
+                                download="products.pdf"><i class="icon-pdf icon-color-light"></i>Download PDF</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/brochure-pdf.png" />
+                            <p class="pdf-name">2028</p>
+                            <a href="../catalog/products.pdf"
+                                class="btn btn-products bg-pr-dark btn-download d-inline-flex align-items-center color-white"
+                                download="products.pdf"><i class="icon-pdf icon-color-light"></i>Download PDF</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/brochure-pdf.png" />
+                            <p class="pdf-name">2029</p>
+                            <a href="../catalog/products.pdf"
+                                class="btn btn-products bg-pr-dark btn-download d-inline-flex align-items-center color-white"
+                                download="products.pdf"><i class="icon-pdf icon-color-light"></i>Download PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div btn_group>
+                    <button data-prev>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="19" fill="none"
+                            xmlns:v="https://vecta.io/nano">
+                            <path d="M10.485 17.971L2 9.485 10.485 1" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round">
+                            </path>
+                        </svg>
+                    </button>
+                    <button data-next>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="19" fill="none"
+                            xmlns:v="https://vecta.io/nano">
+                            <path d="M1.485 1l8.485 8.485-8.485 8.485" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round"></path>
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script>
+    (function () {
+        var swiper_scale_active = new Swiper(".swiper", {
+            // Swiper 配置
+            // navigation: {
+            //     nextEl: "[btn_group] [data-next]",
+            //     prevEl: "[btn_group] [data-prev]",
+            // },
+            slidesPerView: 3,
+            loop: true,
+            // Responsive breakpoints
+            breakpoints: {
+
+                575.98: {
+                    speed: 900,
+
+                },
+
+                991.98: {
+                    speed: 1400,
+                    slidesPerView: 5,
+
+                },
+            },
+            keyboard: {
+                enabled: true,
+            },
+            centeredSlides: true,
+            loop: true,
+            slideToClickedSlide: true,
+            spaceBetween: 10,
+            grabCursor: true,
+            effect: "zoom",
+            /*
+                  autoplay: {
+                    delay: 4000,
+                  },*/
+            // Navigation arrows (not in use)
+            navigation: {
+                nextEl: "[btn_group] [next2]",
+                prevEl: "[btn_group] [prev2]",
+            },
+        });
+
+        const prevBtn = document.querySelector("[data-prev]");
+        const nextBtn = document.querySelector("[data-next]");
+
+        function prev_slide() {
+            swiper_scale_active.slidePrev(0);
+        }
+        function next_slide() {
+            swiper_scale_active.slideNext(0);
+        }
+
+        prevBtn.addEventListener("click", prev_slide);
+        nextBtn.addEventListener("click", next_slide);
+        // Update button group position on window resize
+        window.addEventListener("resize", updateBtnGroupPosition);
+
+        function updateBtnGroupPosition() {
+            const swiperWidth = document.querySelector(".swiper").offsetWidth;
+            const btnGroupWidth = btnGroup.offsetWidth;
+            btnGroup.style.left = `${swiperWidth / 2 - btnGroupWidth / 2}px`;
+        }
+
+        // Initial position update
+        updateBtnGroupPosition();
+    })();
+</script>

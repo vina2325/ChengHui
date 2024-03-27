@@ -1,0 +1,129 @@
+#news .black-container {
+    padding: 4rem 0 10rem 0;
+}
+#news .news-title {
+    width: 90%;
+    padding-left: 1rem;
+}
+
+#news .row {
+    border-bottom: 1px solid #70080f;
+}
+
+.news-card {
+    padding: 2rem 0;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+#news2 .three-line {
+    z-index: 0;
+}
+#news2 .container{
+    max-width: 70%;
+    padding: 4rem 0 8rem 0;
+}
+#news2 .news-bg{
+    position: absolute;
+    z-index: -1;
+}
+#news2 .three-line:after {
+    z-index: -2;
+}
+#news2 .breadcrumb {
+    border-bottom: 1px solid #fff;
+    padding: 1.5rem 7rem;
+}
+#news2 .breadcrumb-item a {
+    color: black;
+}
+
+#news2 .breadcrumb-item::before{
+    color: black;
+}
+#news2 .time {
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+
+#news2 .heading-medium {
+    font-weight: bolder;
+    font-size: 2rem;
+    letter-spacing: 0em;
+    margin-bottom: 1.5rem;
+}
+
+#news2 .content p {
+    line-height: 2.5rem;
+}
+
+#news2 .content h3 {
+    padding: 1.5rem 0;
+}
+
+#news2 .back svg {
+    margin-right: 10px;
+    
+}
+#news2 .back {
+    color: #e60012;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+button.cats {
+    background: #70080f !important;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    padding: 0 0.8rem;
+    margin-bottom: 1rem;
+}
+.share-btn img {
+    width: 37px;
+    filter: brightness(0.9);
+}
+
+/* Media */
+
+/* xxl */
+@media (max-width: 1399.98px) { 
+
+
+}
+
+/* xl */
+@media (max-width: 1199.98px) { 
+ 
+}
+/* lg */
+@media (max-width:991.98px) { 
+    #news2 .breadcrumb {
+        padding: 1.5rem 1rem;
+    }
+    #news2 .container {
+        max-width: 90%;
+    }
+}
+/* md */
+@media (max-width: 767.98px) { 
+    #news2 .news-bg {
+        height: 610px;
+    }
+}
+
+/* sm */
+@media (max-width:575.98px) {
+    #news2 .heading-medium {
+        font-size: 1.5rem;
+    }
+    #news .news-title {
+        width: 95%;
+        padding-left: 1rem;
+    }
+}

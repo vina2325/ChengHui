@@ -1,0 +1,78 @@
+/* 背景影片 */
+.start {
+    background: transparent url(../images/btn-play.png) no-repeat center ;
+    background-size: contain;
+    width: 80px;
+    height:80px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    border: none;
+    filter: brightness(0.8) drop-shadow(0,0,4,black);
+}
+
+/* modal */
+.modal{
+    z-index: 10000;
+}
+.modal-backdrop.show {
+  opacity: .7;
+}
+.modal-content{
+  background: transparent;
+}
+.btn-close {
+  width: 30px;
+  height: 30px;
+  background: url(../images/close.png) no-repeat bottom;
+  overflow: hidden;
+  text-indent: -10000em;
+  cursor: pointer;
+  border: 0;
+  opacity: 1;
+  position: absolute;
+  right: 0;
+  top: -36px;
+  z-index: 999;
+  background-size: 100% auto;
+}
+  
+  .modal-dialog {
+    top: 10%;
+    opacity: 0;
+  }
+  
+  .show .modal-dialog {
+    opacity: 1;
+    top: 50%;
+    pointer-events: auto;
+    transform: translateY(-50%) !important;
+    transition: all .5s ease-in-out;
+  }
+  
+  #picModal .modal-body {
+    padding: 0;
+    text-align: center;
+  }
+  
+  .modal-backdrop {
+    opacity: 0.5;
+  }
+  
+  .modal-footer {
+    padding: 10px 30px 10px;
+    text-align: right;
+    border: none;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    right: 0;
+  }
+  
+  
+  /* modal */
