@@ -638,6 +638,7 @@ footer .border-top p {
   justify-content: start;
   align-self: flex-start;
   order: 2;
+  width: 100%;
 }
   #header{
     height: auto;
@@ -668,6 +669,7 @@ footer .border-top p {
 .navbar-scroll .navbar-right {
   align-items: start !important;
   margin-left: 0;
+  order: 1;
 }
 .footer-address h5 {
   font-size: 1rem;
