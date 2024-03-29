@@ -12,7 +12,10 @@
     bottom: 40px;
     padding: 4px 18px;
     border-radius: 20px;
-  }
+    left: 50%;
+    transform: translateX(-50%);
+    right: unset;
+}
   .carousel-indicators [data-bs-target] {
     width: 8px;
     height: 8px;
