@@ -453,6 +453,11 @@ footer .border-top p {
   display: none; /* 默认隐藏 */
   opacity: 0.7;
   transition: 1s;
+  text-align: right;
+}
+.scroll-to-top  img{
+  width: 80%;
+
 }
 .scroll-to-top:hover,.scroll-to-top:active{
   opacity: 1;
@@ -678,6 +683,10 @@ footer .border-top p {
 
 /* sm */
 @media (max-width:575.98px) {
+
+.scroll-to-top img {
+  width: 60%;
+}
   .logo-horizontal {
     display: block;
     width: 18rem;
