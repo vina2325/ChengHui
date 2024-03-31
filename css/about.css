@@ -23,6 +23,7 @@
     background: url(../images/about-history.jpg);
     opacity:0.3;
     background-attachment: fixed;
+    background-size: cover;
 }
 .history-container .list-group-item {
     color: #e1e1e1;

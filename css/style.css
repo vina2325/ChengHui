@@ -680,6 +680,7 @@ footer .border-top p {
   align-items: start !important;
   margin-left: 0;
   order: 1;
+  height: 100%;
 }
 .footer-address h5 {
   font-size: 1rem;
@@ -751,9 +752,7 @@ footer .border-top p {
   .home-navbar .logo-horizontal,.logo-horizontal {
     width: 14rem;
 }
-#footer{
-  padding-bottom: 5rem;
-}
+
 .language ul li {
   margin: 0px 9px;
 }
