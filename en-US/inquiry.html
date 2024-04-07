@@ -26,9 +26,9 @@
                             <p>Solid Carbide Short Reamers</p>
                         </div>
                         <div class="quantity">
-                            <button class="btn minus-btn"></button>
-                            <input type="text" class="form-control" value="1" readonly>
                             <button class="btn plus-btn"></button>
+                            <input type="text" class="form-control" value="1" readonly>
+                            <button class="btn minus-btn"></button>
                         </div>
                         <button class="btn delete-btn"></button>
                         <div class="red-line bottom" style="width: 100%;"></div>
@@ -41,9 +41,9 @@
                             <p>Solid Carbide Short Reamers</p>
                         </div>
                         <div class="quantity">
-                            <button class="btn minus-btn"></button>
-                            <input type="text" class="form-control" value="1" readonly>
                             <button class="btn plus-btn"></button>
+                            <input type="text" class="form-control" value="1" readonly>
+                            <button class="btn minus-btn"></button>
                         </div>
                         <button class="btn delete-btn"></button>
                     </div>
@@ -55,9 +55,9 @@
                             <p>Solid Carbide Short Reamers</p>
                         </div>
                         <div class="quantity">
-                            <button class="btn minus-btn"></button>
-                            <input type="text" class="form-control" value="1" readonly>
                             <button class="btn plus-btn"></button>
+                            <input type="text" class="form-control" value="1" readonly>
+                            <button class="btn minus-btn"></button>
                         </div>
                         <button class="btn delete-btn"></button>
                         <div class="red-line bottom" style="width: 100%;"></div>
@@ -114,8 +114,10 @@
                 </div>
                 <div class="mb-3 row">
                     <label for="code" class="col-sm-3 col-form-label">Code<span class="required"></span></label>
-                    <div class="col-sm-9">
+                    <div class="col-sm-9 position-relative">
                         <input type="text" class="form-control" id="code">
+                        <span class="chktext" id="chktext"><img src="../images/load_show_chknum.jpg"></span>
+                        <button type="button" class="reBtn" onclick="load_showchknum();"></button>
                     </div>
                 </div>
                 <div class="row btn-dec">
