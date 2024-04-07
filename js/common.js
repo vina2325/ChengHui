@@ -49,13 +49,18 @@ $(function () {
     // 点击导航链接时的事件处理程序
     $(document).on('click', 'a', function (event) {
         if (event.target.className.includes("btn-download")) {
-            return
+            return;
         }
         event.preventDefault();
         var href = $(this).attr('href');
-        $(window).scrollTop(0);
-        window.location.hash = href;
-        loadPageAndSetNavbar();
+        if (!href.startsWith('http')) { // 排除以http开头的链接
+            $(window).scrollTop(0);
+            window.location.hash = href;
+            loadPageAndSetNavbar();
+        } else {
+            // 处理外部链接，例如重定向至外部链接或其他操作
+            window.location.href = href;
+        }
     });
 
     // 监听hashchange事件，当URL中的hash发生变化时重新加载页面并设置导航栏active状态
