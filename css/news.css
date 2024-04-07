@@ -128,8 +128,17 @@ button.cats {
     #news2 .heading-medium {
         font-size: 1.5rem;
     }
+    #news .container{
+        padding: 0 20px;
+    }
     #news .news-title {
-        width: 95%;
-        padding-left: 1rem;
+        width: 100%;
+        padding-left: 0;
+    }
+    #news .news-card{
+        flex-direction: column;
+    }
+    #news .news-time {
+        margin-top: 1rem;
     }
 }

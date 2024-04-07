@@ -12,7 +12,6 @@
     color: antiquewhite;
     margin: 3rem 0 1rem 0;
 }
-
   
 .contact-container label {
     color: white;
@@ -28,7 +27,7 @@
     color: white;
 }
 
-  .contact-container button {
+  .contact-container .btn-send {
     position: relative;
     background-color: #e60012;
     color: #ffffffe0;
@@ -90,6 +89,50 @@
 }
 
 
+.chktext {
+  height: 100%;
+  top: 0;
+  right: 12px;
+  z-index: 2;
+  position: absolute;
+
+}
+
+.chktext img {
+  height: calc(100% - 5px);
+  border-radius: 0 5px 5px 0;
+}
+
+.reBtn {
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  right: 100px;
+  z-index: 2;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+  border: unset;
+  transform: translateY(-54%);
+}
+
+.reBtn::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 0;
+  -webkit-mask: url("../images/re.svg") no-repeat;
+  mask: url("../images/re.svg") no-repeat;
+  background: #E60012;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.reBtn:hover::before {
+  transform: rotate(180deg);
+}
+
 
 
 .form-control:disabled, .form-control[readonly] {
@@ -125,6 +168,10 @@
           background: url(../images/inquiry-close.png);
           width:40px;
           height:40px;
+    }
+    #inquiry .quantity .btn:hover,#inquiry .delete-btn:hover{
+      transform: translate(0);
+      filter: brightness(1.1);
     }
     #inquiry .btn{
       background-repeat: no-repeat;
@@ -166,7 +213,7 @@
     border-radius: 5px;
 }
 
-.inquiry-container button {
+.inquiry-container .btn-send {
     position: absolute;
     background-color: #e60012;
     color: #ffffffe0;
@@ -198,7 +245,7 @@
     border-radius: 52% 52% 0 0;
     transform: translateX(-50%) rotate(0deg);
 }
-.inquiry-container button:hover {
+.inquiry-container .btn-send:hover {
   transform: translateX(calc(-50% + 4px)) !important;
 }
 
@@ -246,6 +293,9 @@
 
 /* sm */
 @media (max-width:575.98px) {
+  .chktext img {
+    height:100%;
+}
   #inquiry .minus-btn {
     width: 1.5rem;
     height: 1.5rem;

@@ -17,8 +17,9 @@
 }
 
 #brochure .pdf-name {
-    color: #fff;
-    margin: 1rem 0;
+  color: #fff;
+  margin: 1rem 0;
+  font-size: 1.5rem;
 }
 #brochure .swiper {
   margin: 0;
