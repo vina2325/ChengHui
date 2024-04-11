@@ -4,6 +4,9 @@ $(function () {
     $("#footer").load("footer.html");
     $("#navbar").load("navbar.html");
 
+    AOS.init({
+        duration: 1200,
+    })
 
     // 检查URL是否以"/index.html"结尾，如果是则重定向到"/"
     if (window.location.pathname.endsWith('/index.html')) {
@@ -63,7 +66,6 @@ $(function () {
         }
     });
 
-    // 监听hashchange事件，当URL中的hash发生变化时重新加载页面并设置导航栏active状态
     $(window).on('hashchange', function () {
         loadPageAndSetNavbar();
     });
@@ -97,4 +99,5 @@ $(function () {
         });
     });
 });
+
 
