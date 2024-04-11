@@ -9,7 +9,54 @@
     margin: 0 10px 20px 10px;
     background: #e6e6e6;
     overflow: hidden;
+    cursor: pointer;
 }
+.products-card .card-body{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    color: var(--dark-black);
+}
+.products-card .card-body:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #EC0000;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.products-card:hover .card-body,.products-card:focus .card-body,.products-card:active .card-body{
+    color: #fff;
+}
+.products-card:hover .card-body .icon-color-default{
+    color: #fff !important
+    ;
+}
+
+.products-card:hover .card-body:before, .products-card:focus .card-body:before, .products-card:active .card-body:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
 
 .products-card .card-header {
     border-bottom: 8px solid rgb(236 0 0);
@@ -28,7 +75,17 @@
 #products2 .products-group{
     margin-bottom: 120px;
 }
+.products-item-card{
+    cursor: pointer;
+
+}
+
+.products-item-card:hover .products-item-img{
+    box-shadow: 0 0 0 3px #fff, inset 0 0 0 4px #E60012;
+    padding: 0 40px;
+}
 .products-item-img {
+    transition: all .2s ease-in;
     min-height: 240px;
     background: #fff;
     display: flex;
@@ -191,7 +248,20 @@
 .btn-products i {
     font-size: 2.5rem;
 }
-
+.table {
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+.table tr td {
+    text-align: center;
+}
+th {
+    text-align: center;
+}
+th[scope="col"] {
+    background: #7d2329;
+    color: #fff;
+    vertical-align: middle;
+}
 /* Media */
 
 /* xxl */

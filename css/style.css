@@ -13,6 +13,10 @@
   --z-index-9999: 9999;
   --z-index-10000: 10000;
 }
+::selection {
+  color: #fff;
+  background-color: #e60013ae;
+  }
 html, body {
   width: 100vw;
   overflow-x: hidden;
@@ -38,7 +42,6 @@ a {
 }
 a:hover{
   color: var(--white);
-  filter: brightness(1.2);
 }
 img {
   max-width: 100%;
@@ -47,15 +50,38 @@ img {
 ul li{
   list-style-type:none;
   }
+::-webkit-scrollbar {
+    width: 8px;
+    background-color:var(--dark-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color-default);
+  border-radius: 10px;
+}
+.overflow-auto{
+  -webkit-overflow-scrolling: touch;
+}
+.overflow-auto::-webkit-scrollbar{
+  width: 2px;
+  height: 8px;
+}
+
+
+  .collapsing{
+  opacity: 0;
+  transition:all .4s ease-in !important;
+  }
+  .collapse {
+    height: 100%;
+    opacity: 1;
+  }
 .btn-check:focus+.btn, .btn:focus {
     box-shadow: unset;
 }
-.btn,.scroll-to-top {
-  transition: .2s ease-in-out;
-}
-.btn:hover {
+
+/* .btn:hover {
   transform: translateX(4px);
-}
+} */
 .scroll-to-top:hover{
   transform: translateY(-4px);
 }
@@ -83,6 +109,9 @@ ul li{
 }
 .color-gray{
   color: var(--gray);
+}
+.color-dark{
+  color: var(--dark-black);
 }
 .bg-black{
   background: var(--black);
@@ -223,6 +252,9 @@ ul.sub-menu.dropdown-menu li:last-child {
   margin-left: 50px;
   height: 100px;
 }
+#navbarNav .navbar-nav {
+  align-items: center;
+}
 .navbar-dark .navbar-nav .nav-link {
   color: var(--white);
 }
@@ -299,7 +331,7 @@ ul.sub-menu.dropdown-menu li:last-child {
 .home-navbar .navbar-expand-lg .navbar-collapse,.navbar-scroll .navbar-collapse  {
   align-items: center;
   }
-#navbar ul li .nav-link.active, #navbar ul li .nav-link:hover {
+#navbar ul li .nav-link.active {
   background-image: linear-gradient(to right, #e50014 30px, transparent 30px);
   background-position: center bottom 0px;
   background-size: 98% 2.5px;
@@ -371,7 +403,7 @@ ul.sub-menu.dropdown-menu li:last-child {
   text-align: center;
 }
 .home-navbar .logo-vertical img {
-  width: 90%;
+  width: 85%;
   padding-top: 23px;
 }
 .logo-horizontal {
@@ -486,6 +518,7 @@ footer .border-top span a:hover{
   opacity: 0.7;
   transition: 1s;
   text-align: right;
+  transition:translateY opacity .1s ease ;
 }
 .scroll-to-top  img{
   width: 80%;
@@ -539,7 +572,8 @@ footer .border-top span a:hover{
 .banner {
   position: relative;
   width: 100%;
-  height: 400px; /* 设置 Banner 的高度 */
+  height: 400px;
+  background-color: #252525;
 }
 .banner img {
   width: 100%;
@@ -650,6 +684,9 @@ footer .border-top span a:hover{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+#navbarNav .navbar-nav {
+  align-items: start !important;
 }
 
   .navbar {
@@ -790,9 +827,26 @@ footer .col-sm-2{
 .footer-logo{
   width: 90vw;
 }
+a.nav-link img {
+  width: 80%;
+}
+
+.count {
+  width: 19px;
+  height: 15px;
+  transform: rotate(62deg) translateX(-38%);
+  top: 9px;
+  left: 37%;
+  border-radius: 3px;
+  font-size: .8rem;
+}
 }
 
 @media (max-width:450px) {
+  ::-webkit-scrollbar-thumb {
+    background: var(--dark-black);
+    border-radius: 10px;
+  }
   .home-navbar .logo-horizontal,.logo-horizontal {
     width: 14rem;
 }

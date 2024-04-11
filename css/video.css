@@ -29,7 +29,11 @@ position:absolute;
 right:-30px;
 top:0;
 }
-
+.myVideo {
+  filter: drop-shadow(10px 13px 0px #70080F);
+  transition: all .2s;
+  cursor: pointer;
+}
 .myVideo:hover {
   filter: drop-shadow(10px 13px 0px #FF0016);
 }
