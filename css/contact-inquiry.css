@@ -245,9 +245,7 @@
     border-radius: 52% 52% 0 0;
     transform: translateX(-50%) rotate(0deg);
 }
-.inquiry-container .btn-send:hover {
-  transform: translateX(calc(-50% + 4px)) !important;
-}
+
 
 /* Media */
 

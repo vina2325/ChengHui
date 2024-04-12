@@ -78,7 +78,9 @@ ul li{
 .btn-check:focus+.btn, .btn:focus {
     box-shadow: unset;
 }
-
+.btn:hover{
+  color: #fff;
+}
 /* .btn:hover {
   transform: translateX(4px);
 } */
@@ -232,16 +234,23 @@ ul li{
 
 ul.sub-menu.dropdown-menu li {
   border-bottom: 1px solid #ededed;
+  position: relative;
 }
 
 ul.sub-menu.dropdown-menu li:first-child {
   border-radius: 0.25rem 0.25rem 0 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 ul.sub-menu.dropdown-menu li:last-child {
   border-radius: 0 0 0.25rem 0.25rem;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+ul.sub-menu.dropdown-menu li:first-child:hover a {
+  border-radius: 3px 3px 0 0;
+}
+ul.sub-menu.dropdown-menu li:last-child:hover a {
+  border-radius:0 0 3px 3px;
 }
 .navbar-scroll li.nav-item {
   height: 100%;
@@ -311,9 +320,10 @@ ul.sub-menu.dropdown-menu li:last-child {
   display: block;
   position: absolute;
   top: 0;
-  left: 100%; /
-  min-width: 160px;
+  left: 100%;
   z-index: 1;
+  border-radius: 3px;
+  overflow: hidden;
 }
 
 /* 隐藏第三层子菜单 */
@@ -567,6 +577,12 @@ footer .border-top span a:hover{
 .breadcrumb-item{
   text-transform:uppercase;
 }
+.breadcrumb-item.active {
+  color: #ffffff;
+}
+a:not([href]):not([class]), a:not([href]):not([class]):hover {
+  color: #ffffff;
+}
 
 /* 內頁共用 */
 .banner {
@@ -574,6 +590,7 @@ footer .border-top span a:hover{
   width: 100%;
   height: 400px;
   background-color: #252525;
+  overflow: hidden;
 }
 .banner img {
   width: 100%;
@@ -802,12 +819,17 @@ footer .border-top span a:hover{
 .navbar-scroll .logo-horizontal {
   display: block;
   width: 13rem;
-}
+}.breadcrumb-item.active
 .breadcrumb {
   padding-top: 1rem;
 }
 .breadcrumb-item a {
   font-size: 0.8rem;
+}
+.breadcrumb-item.active {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
 }
 .navbar {
   width: 100vw;
