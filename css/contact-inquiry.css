@@ -1,4 +1,7 @@
 
+#contact .banner,#inquiry .banner{
+  overflow: hidden;
+}
 #contact .black-container {
     padding-top: 4rem;
     margin-bottom: -0.4%;
