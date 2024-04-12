@@ -79,11 +79,8 @@ ul li{
     box-shadow: unset;
 }
 .btn:hover{
-  color: #fff;
+  color: unset;
 }
-/* .btn:hover {
-  transform: translateX(4px);
-} */
 .scroll-to-top:hover{
   transform: translateY(-4px);
 }
