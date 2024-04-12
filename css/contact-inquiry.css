@@ -40,6 +40,9 @@
     align-items: center;
     margin: 3rem auto;
 }
+.contact-container .btn-send:hover {
+  color: #fff;
+}
 .contact-container i {
     position: absolute;
     right: 9px;
@@ -227,6 +230,9 @@
     width: 14vw;
     justify-content: center;
     transform: translateX(-50%);
+}
+.inquiry-container .btn-send:hover{
+  color: #fff;
 }
 .inquiry-container i {
     position: absolute;
