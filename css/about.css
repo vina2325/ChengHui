@@ -84,4 +84,16 @@
     .history-container .list-group-item p {
         width: 70%;
     }
+    .history-container .number {
+        font-size: 1.5rem;
+    }
+    #about .paragraph-primary {
+        padding: 0;
+    }
+    #about .gray-container {
+        padding: 3rem 0 2rem 0;
+    }
+    .cert-container img {
+        margin-bottom: 2rem;
+    }
 }

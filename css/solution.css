@@ -13,6 +13,7 @@
     color: #fff;
     width: 100%;
 }
+
 #solution .banner img {
     object-fit: contain;
 }
@@ -62,7 +63,7 @@
     text-align: center;
     top: 50%;
     left: 50%;
-    transform: translate(-69%, 8%);
+    transform: translate(-50%, -95%);
 }
 
 
@@ -116,14 +117,17 @@
 /* sm */
 @media (max-width:575.98px) {
     #solution .container {
-        padding: 7rem 10px;
+        padding: 3rem 20px;
+    }
+    #solution .banner-content {
+        top: 45px;
     }
 
     .oem-odm {
         width: 70%;
         z-index: 1;
         text-shadow: 2px 2px 3px #000000a3;
-        transform: translate(-57%, 26%);
+        transform: translate(-50%, -100%);
     }
     #solution .machine1 {
         bottom: -129px;
@@ -162,6 +166,7 @@
 @media (max-width:450px) {
     .oem-odm {
         width: 80%;
+        transform: translate(-50%, -85%);
     }
     #solution .figure img {
         border-radius: 2rem !important;

@@ -300,6 +300,13 @@
 
 /* sm */
 @media (max-width:575.98px) {
+  #contact .black-container {
+    padding-top: 3rem;
+    margin-bottom: -1.4%;
+}
+#inquiry .gray-container {
+  padding: 3rem 0 0 0;
+}
   .chktext img {
     height:100%;
 }

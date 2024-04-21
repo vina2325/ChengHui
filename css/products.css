@@ -1,7 +1,7 @@
 #products .black-container{
     padding: 4rem 0;
 }
-#products .paragraph-second{
+#products .paragraph-primary{
     padding-bottom: 8rem;
 }
 .products-card {
@@ -288,7 +288,15 @@ th[scope="col"] {
   
   /* sm */
   @media (max-width:575.98px) {
-
+    .swiper {
+        height: 200px;
+    }
+    #products .black-container {
+        padding: 2rem 0;
+    }
+    #products .paragraph-primary {
+        padding-bottom: 3rem;
+    }
     #products2 .products-group {
         padding: 0 3%;
     }
@@ -302,6 +310,10 @@ th[scope="col"] {
     }
     .btn-products i {
         font-size: 1.5rem;
+    }
+    .products-card .card-body {
+        background: #fff;
+        padding: 20px 30px;
     }
   }
   

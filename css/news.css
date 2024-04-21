@@ -130,18 +130,27 @@ button.cats {
 
 /* sm */
 @media (max-width:575.98px) {
+    #news .black-container {
+        padding: 3rem 0 3rem 0;
+    }
     #news2 .heading-medium {
         font-size: 1.5rem;
     }
-    #news .container{
-        padding: 0 20px;
+    #news .container {
+        padding: 0 35px;
     }
     #news .news-title {
         width: 100%;
         padding-left: 0;
+        line-height: 1.8rem;
     }
-    #news .news-card{
+    #news .news-card {
         flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    #news .row {
+        margin-bottom: 2rem;
     }
     #news .news-time {
         margin-top: 1rem;

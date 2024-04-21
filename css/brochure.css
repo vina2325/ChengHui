@@ -129,7 +129,7 @@
 #brochure iframe {
   height: 300px;
 }
-.modal.fade .modal-dialog {
+#brochure .modal.fade .modal-dialog {
   transform: translateY(calc(-50% + -150px)) !important;
 }
 

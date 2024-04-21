@@ -33,6 +33,7 @@ top:0;
   filter: drop-shadow(10px 13px 0px #70080F);
   transition: all .2s;
   cursor: pointer;
+  padding: 0;
 }
 .myVideo:hover {
   filter: drop-shadow(10px 13px 0px #FF0016);
@@ -67,6 +68,14 @@ top:0;
 
 /* sm */
 @media (max-width:575.98px) {
-
-
+  #video .row {
+    padding: 0rem 20px;
+    margin-bottom: 2rem;
+}
+#video .black-container {
+    padding: 3rem 0;
+}
+#video iframe {
+  height: 280px;
+}
 }
