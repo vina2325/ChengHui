@@ -668,9 +668,7 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 .navbar-nav .nav-item:not(.navbar-nav .nav-item:last-child) {
   margin: 0 1.5rem 0 0;
 }
-.navbar-scroll .navbar-right {
-  margin-left: 0;
-}
+
 .home-navbar .logo-vertical img {
   width: 71%;
   padding-top: 23px;
@@ -680,7 +678,9 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 
 /* xl */
 @media (max-width: 1199.98px) { 
-
+  .navbar-scroll .navbar-right {
+    margin-left: 0;
+  }
   #header {
     height: 100%;
 }
