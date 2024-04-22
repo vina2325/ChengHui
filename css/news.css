@@ -143,7 +143,12 @@ button.cats {
     #news .news-title {
         width: 100%;
         padding-left: 0;
-        line-height: 1.8rem;
+        line-height: 1.5rem;
+        font-size: 1.3rem;
+    }
+    #news2 .content p {
+        line-height: 2.2rem;
+        text-align: left;
     }
     #news .news-card {
         flex-direction: column;
