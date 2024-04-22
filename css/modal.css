@@ -76,3 +76,16 @@
   
   
   /* modal */
+  @media (max-width:575.98px)  {
+    .start {
+      width: 60px;
+      height: 60px;
+  }
+  }
+
+  @media (max-width:450px) {
+    .start {
+      width: 40px;
+      height: 40px;
+  }
+  }

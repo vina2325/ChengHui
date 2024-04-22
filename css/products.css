@@ -315,6 +315,9 @@ th[scope="col"] {
         background: #fff;
         padding: 20px 30px;
     }
+    ol.color-gray li {
+        text-shadow: 4px 2px 8px #00000094;
+    }
   }
   
 @media (max-width:450px) {

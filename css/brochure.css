@@ -66,6 +66,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     padding-right: 1rem;
+    z-index: 999;
 }
   
   [btn_group] button{

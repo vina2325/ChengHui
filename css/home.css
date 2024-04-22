@@ -382,6 +382,19 @@
  }
 /* sm */
 @media (max-width: 575.98px) {
+    .home-sec3 .paragraph-primary {
+        padding: 0;
+        width: 80%;
+    }
+    
+    .home-sec4 .card-title {
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+    }
+    
+    .home-sec4 .card-text {
+        line-height: 1.3rem;
+    }
     .home-sec4 .card {
         padding: 0rem 0.5rem;
     }
