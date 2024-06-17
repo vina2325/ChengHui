@@ -32,7 +32,7 @@
 #news2 .three-line {
     z-index: 0;
 }
-#news2 .container{
+#news2 .pageLoad .container{
     max-width: 70%;
     padding: 4rem 0 8rem 0;
 }
@@ -118,7 +118,7 @@ button.cats {
     #news2 .breadcrumb {
         padding: 1.5rem 1rem;
     }
-    #news2 .container {
+    #news2 .pageLoad .container {
         max-width: 90%;
     }
 }
@@ -137,7 +137,7 @@ button.cats {
     #news2 .heading-medium {
         font-size: 1.5rem;
     }
-    #news .container {
+    #news .pageLoad .container {
         padding: 0 35px;
     }
     #news .news-title {

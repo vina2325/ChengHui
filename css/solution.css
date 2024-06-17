@@ -1,4 +1,4 @@
-#solution .container {
+#solution .pageLoad .container {
     padding: 7rem;
 }
 #solution .banner {
@@ -106,7 +106,7 @@
     #solution .machine2 {
         bottom: -112px;
     }
-    #solution .container {
+    #solution .pageLoad .container {
         padding: 7rem 0;
     }
 }
@@ -116,7 +116,7 @@
 
 /* sm */
 @media (max-width:575.98px) {
-    #solution .container {
+    #solution .pageLoad .container {
         padding: 3rem 20px;
     }
     #solution .banner-content {
