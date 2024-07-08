@@ -73,6 +73,7 @@
 
 #solution .figure-caption {
     color: #fff;
+    font-size: 1.1rem;
 }
 .bn-oem {
     object-fit: cover !important;
@@ -94,6 +95,9 @@
 
 /* xl */
 @media (max-width: 1199.98px) { 
+    .oem-odm {
+        transform: translate(-50%, -50%);
+    }
  
 }
 /* lg */
@@ -116,6 +120,10 @@
 
 /* sm */
 @media (max-width:575.98px) {
+    #solution .figure-caption {
+        color: #fff;
+        font-size: .875em;
+    }
     #solution .pageLoad .container {
         padding: 3rem 20px;
     }

@@ -453,7 +453,7 @@ a.nav-link img {
 .navbar-scroll .navbar-right {
   align-items: start !important;
   margin-left: 50px;
-  height: 75px;
+  height: 100%;
 }
 .navbar-scroll .navbar-nav {
   align-items: center;
@@ -517,6 +517,9 @@ footer .border-top p,footer .border-top span a {
 }
 footer .border-top span a:hover{
   color: var(--white) !important;
+}
+.footer-address h5 {
+  font-size: 1rem;
 }
 .scroll-to-top {
   position: fixed;

@@ -103,6 +103,9 @@
 #products-3 {
     position: relative;
 }
+#products-3 main {
+    position: relative;
+}
 #products-3 .black-container {
     position: relative;
     padding-top: 69px;
@@ -273,6 +276,9 @@ th[scope="col"] {
   
   /* xl */
   @media (max-width: 1199.98px) { 
+    .card.products-card .heading-medium {
+        font-size: 1.5rem;
+    }
    
   }
   /* lg */
