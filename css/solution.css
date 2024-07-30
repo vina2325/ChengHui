@@ -12,6 +12,7 @@
     left: 7%;
     color: #fff;
     width: 100%;
+    z-index: 1;
 }
 
 #solution .banner img {
