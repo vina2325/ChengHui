@@ -46,7 +46,37 @@ $(function () {
         loadPageAndSetNavbar();
     });
 
+
     $(document).ready(function () {
+        // Check if cookies have been accepted
+        if (localStorage.getItem('cookiesAccepted') === 'true') {
+            $('#cookieBox').hide();
+        }
+
+        // Accept cookies button click event
+        $('#acceptCookies').on('click', function () {
+            localStorage.setItem('cookiesAccepted', 'true');
+            $('#cookieBox').addClass('fade-out');
+            setTimeout(function () {
+                $('#cookieBox').hide();
+            }, 500);
+        });
+    });
+
+    $(document).ready(function () {
+        // privacy
+        if (localStorage.getItem('cookiesAccepted') === 'true') {
+            $('#cookieBox').hide();
+        }
+
+        $('#acceptCookies').on('click', function () {
+            localStorage.setItem('cookiesAccepted', 'true');
+            $('#cookieBox').addClass('fade-out');
+            setTimeout(function () {
+                $('#cookieBox').hide();
+            }, 500);
+        });
+
         $(window).scroll(function () {
             var scroll = $(window).scrollTop(); // 获取滚动的距离
             var navbar = $('.navbar'); // 导航栏元素
@@ -61,8 +91,7 @@ $(function () {
             }
 
             // Gototop
-
-            if (scroll > window.innerHeight) {
+            if (scroll > 10) {
                 $('.scroll-to-top').fadeIn();
             } else {
                 $('.scroll-to-top').fadeOut();
